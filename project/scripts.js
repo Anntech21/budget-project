@@ -8,11 +8,11 @@ let outputNeeds = ''
 let outputWants = ''
 let outputSavings = ''
 let food = ""
-let rent = ''
-let bills = ''
-let healthcare = ''
-let transportation = ''
-let essentials = ''
+let mortgage = ''
+let utility = ''
+let insurance = ''
+let travel = ''
+let miscellaneous = ''
 let funds = ''
 
 // button variable
