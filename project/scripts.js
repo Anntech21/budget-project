@@ -111,6 +111,7 @@ function startOver() {
     document.getElementById('part2').textContent =""
     document.getElementById('part3_B').textContent ="It's important to put money towards your emergency funds.This will come from the savings portion"
     document.getElementById('part3').textContent =""
+    document.getElementById('part4').textContent = "Lets start over, Go back and click Begin"
 
 }
 
