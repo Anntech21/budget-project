@@ -19,15 +19,15 @@ let funds = ''
 let beginButton = document.getElementById("begin-button")
 let inputNeedsButton = document.getElementById('inputNeedsButton')
 let emergencyButton = document.getElementById('emergencyFundsButton')
-let startOverButton = document.getElementById('startOver')
+
 
 // buttons 
-beginButton.addEventListener("click", mybudget);
-inputNeedsButton.addEventListener('click', inputNeeds);
+beginButton.addEventListener("click", myBudget);
+inputNeedsButton.addEventListener("click", inputNeeds);
 emergencyButton.addEventListener("click", emergencyFunds);
-startOverButton.addEventListener('click', startOver);
 
-function mybudget() {
+//start budget paragraph
+function myBudget() {
     person = prompt('Enter your Login ID:')
     budget = prompt('Enter your monthly salary:')
     console.log(budget)
@@ -90,33 +90,57 @@ function emergencyFunds() {
     }
 }
 
+let startOverButton = document.getElementById("startOver1");
+startOverButton.addEventListener("click", startOver);
+
 function startOver() {
-    person = '';
+    person = "";
     budget = 0;
     needs = 0;
     savings = 0;
     wants = 0;
-    output = ''
-    outputNeeds = ''
-    outputWants = ''
-    outputSavings = ''
-    food = ""
-    mortgage = ''
-    utility = ''
-    insurance = ''
-    travel = ''
-    essentials = ''
-    funds = ''
-    document.getElementById('part1').textContent =""
-    document.getElementById('part2').textContent =""
-    document.getElementById('part3_B').textContent ="It's important to put money towards your emergency funds.This will come from the savings portion"
-    document.getElementById('part3').textContent =""
-    document.getElementById('part4').textContent = "Lets start over, Go back and click Begin"
+    //output = ''
+    //outputNeeds = ''
+    //outputWants = ''
+    //outputSavings = ''
+    //food = ""
+    //mortgage = ''
+    //utility = ''
+    //insurance = ''
+    //travel = ''
+    //essentials = ''
+    //funds = ''
 
-}
+document.getElementById('p1').textContent = ""
+document.getElementById('p2').textContent = ""
+document.getElementById('p3').textContent = ""
+
+document.getElementById('part2').textContent = ""
+document.getElementById('p4').textContent =  ""
+document.getElementById('p5').textContent = ""
+document.getElementById('p6').textContent = ""
+document.getElementById('p7').textContent = ""
+
+document.getElementById('part3').textContent = ""
+document.getElementById('p8').textContent =  ""
+document.getElementById('p9').textContent = ""
+
+document.getElementById('p11').textContent = ""
+document.getElementById('p12').textContent = ""
+};
+
+document.getElementById('part1').textContent = `Hello ${person}, your monthly budget for this month is:`
+
+startOverButton = document.getElementById('part1').textContent = ""
+document.getElementById('part2').textContent = "";
+document.getElementById('part3_B').textContent = "It's important to put money towards your emergency funds. This will come from the savings portion";
+document.getElementById('part3').textContent = "";
+    document.getElementById('part4').textContent = "Lets start over, Go back and click Begin";
 
 // 1. How many child nodes does the body element have in this document?
 
 // 2. What is the relationship between the div with the class of todo-section and the list element with the text of "Reading"?
 
 // 3. What is the relationship between the div with the class of image-gallery and the html element?
+
+
