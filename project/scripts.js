@@ -61,14 +61,14 @@ function inputNeeds() {
         needs = wants - needs
 
     } else {
-        document.getElementById('part2').textContent = `Budget spent on:`
+    document.getElementById('part2').textContent = `Budget spent on:`
     document.getElementById('p4').textContent =  `Needs: $ ${needs},`
     document.getElementById('p5').textContent = `Savings: $ ${savings},`
     document.getElementById('p6').textContent = `Wants: $ ${wants}`
     document.getElementById('p7').textContent = `You are within your Budget.`
     }
-
 }
+
 function emergencyFunds() {
     document.getElementById('part3_B').textContent = ""
     funds = prompt('how much would you like to put in your emergency funds?');
@@ -80,13 +80,11 @@ function emergencyFunds() {
         document.getElementById('p9').textContent = `Savings: $ ${savings},`
         document.getElementById('p10').textContent = `Wants: $ ${wants}`
     } else {
-
         savings = savings - funds
         document.getElementById('part3').textContent = `Funds:$${funds}`
         document.getElementById('p11').textContent =  `Needs: $ ${needs},`
         document.getElementById('p12').textContent = `Savings: $ ${savings},`
         document.getElementById('p13').textContent = `Wants: $ ${wants}`
-
     }
 }
 
@@ -98,7 +96,7 @@ function startOver() {
     budget = 0;
     needs = 0;
     savings = 0;
-    wants = 0;
+    //wants = 0;
     //output = ''
     //outputNeeds = ''
     //outputWants = ''
@@ -135,7 +133,7 @@ startOverButton = document.getElementById('part1').textContent = ""
 document.getElementById('part2').textContent = "";
 document.getElementById('part3_B').textContent = "It's important to put money towards your emergency funds. This will come from the savings portion";
 document.getElementById('part3').textContent = "";
-    document.getElementById('part4').textContent = "Lets start over, Go back and click Begin";
+//document.getElementById('part4').textContent = "Lets start over, Go back and click Begin";
 
 // 1. How many child nodes does the body element have in this document?
 
