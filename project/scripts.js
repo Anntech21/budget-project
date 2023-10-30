@@ -84,7 +84,6 @@ function emergencyFunds() {
         document.getElementById('part3').textContent = `Funds:$${funds}`
         document.getElementById('p11').textContent =  `Needs: $ ${needs},`
         document.getElementById('p12').textContent = `Savings: $ ${savings},`
-        document.getElementById('p13').textContent = `Wants: $ ${wants}`
     }
 }
 
@@ -127,12 +126,12 @@ document.getElementById('p11').textContent = ""
 document.getElementById('p12').textContent = ""
 };
 
-document.getElementById('part1').textContent = `Hello ${person}, your monthly budget for this month is:`
+//document.getElementById('part1').textContent = `Hello ${person}, your monthly budget for this month is:`
 
-startOverButton = document.getElementById('part1').textContent = ""
-document.getElementById('part2').textContent = "";
-document.getElementById('part3_B').textContent = "It's important to put money towards your emergency funds. This will come from the savings portion";
-document.getElementById('part3').textContent = "";
+//startOverButton = document.getElementById('part1').textContent = ""
+//document.getElementById('part2').textContent = "";
+//document.getElementById('part3_B').textContent = "It's important to put money towards your emergency funds. This will come from the savings portion";
+//document.getElementById('part3').textContent = "";
 //document.getElementById('part4').textContent = "Lets start over, Go back and click Begin";
 
 // 1. How many child nodes does the body element have in this document?
